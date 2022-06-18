@@ -1,15 +1,21 @@
-import { Link } from "react-router-dom"; // to preventDefault()
+// import { Link } from "react-router-dom"; // to preventDefault()
+import { NavLink } from "react-router-dom"; // to preventDefault() && Add CSS when link is active
+import classes from "./MainHeader.module.css";
 
 const MainHeader = () => {
   return (
-    <header>
+    <header className={classes.header}>
       <nav>
         <ul>
           <li>
-            <Link to="/welcome">Welcome</Link>
+            <NavLink activeClassName={classes.active} to="/welcome">
+              Welcome
+            </NavLink>
           </li>
           <li>
-            <Link to="/Products">Products</Link>
+            <NavLink activeClassName={classes.active} to="/Products">
+              Products
+            </NavLink>
           </li>
         </ul>
       </nav>

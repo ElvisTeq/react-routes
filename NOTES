@@ -36,3 +36,15 @@ To activate { Route } reatures (Needs to be added in top layer) <BrowserRouter><
 
 ----------------------------------------------- import { Link } from 'react-router-dom'
 to preventDefault() => <Link to="/welcome">Welcome</Link>
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+## 4 Using NavLinks
+
+- "MainHeader.js"
+  => { navLink } implemented replaced { Link }
+
+----------------------------------------------- import { navLink } from 'react-router-dom'
+Does the same as { Link } but contains "activeClassName={}"
+<NavLink activeClassName={classes.active} to='/welcome'>Welcome</NavLink>
+"activeClassName={}" => add CSS when link is active
