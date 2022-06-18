@@ -1,3 +1,27 @@
 ## 1 Installing React Router
 
 - npm i react-router-dom@5
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+## 2 Using & Routes
+
+- "App.js"
+  => Linking Router Components with { Route }
+
+- "Welcome.js"
+  => Router Component Created
+
+- "Product.js"
+  => Router Component Created
+
+- "index.js"
+  => Activating { Route } fearures with { BrowserRouter }
+
+----------------------------------------------- import { Route } from 'react-router-dom'
+To Link Route Components
+
+----------------------------------------------- import { BrowserRouter } from 'react-router-dom'
+To activate { Route } reatures (Needs to be added in top layer)
+
+**\*\*** Router Component Created inside a "pages" folder **\*\***
