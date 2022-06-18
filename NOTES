@@ -91,3 +91,12 @@ To allow only 1 route to be activated (finds/renders first match) (will not cons
 
 1. <Route path='anyThing' exact> (only run if exact URL)
 2. Change JSX order
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+## 7 Working with Nested Routes
+
+We can nest routes { Route } inside another { Route }
+
+- "Welcome.js"
+  => Added { Route } nesting "/welcome" + "/new-user"
