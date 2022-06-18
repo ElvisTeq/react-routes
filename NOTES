@@ -48,3 +48,28 @@ to preventDefault() => <Link to="/welcome">Welcome</Link>
 Does the same as { Link } but contains "activeClassName={}"
 <NavLink activeClassName={classes.active} to='/welcome'>Welcome</NavLink>
 "activeClassName={}" => add CSS when link is active
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+## 5 Adding Dynamic Routes with Params "/:"
+
+- Created
+  => "ProductDetail.js"
+
+- "Product.js"
+  => Added <li> of products
+
+- "App.js"
+  => <Route path="/product-detail/:productId"> <anyModule /> </Route>
+  => To dynamically change URL based on ":anyThing"
+  => ":productId" could be "anything", and will active <anyModule>
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+## 6 Extracting Route Params
+
+- "ProductDetail.js"
+  => Implemented { useParams } to extract Params passed by "App.js"
+
+------------------------------------------------ import { useParams } from 'react-router-dom'
+To extract params "/:"
