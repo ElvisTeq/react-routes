@@ -19,9 +19,20 @@
   => Activating { Route } fearures with { BrowserRouter }
 
 ----------------------------------------------- import { Route } from 'react-router-dom'
-To Link Route Components
-
+To Link Route Components <Route path="/welcome"><Welcome /></Route>
+path => URL/welcome
 ----------------------------------------------- import { BrowserRouter } from 'react-router-dom'
-To activate { Route } reatures (Needs to be added in top layer)
+To activate { Route } reatures (Needs to be added in top layer) <BrowserRouter><App /></BrowserRouter>
 
 **\*\*** Router Component Created inside a "pages" folder **\*\***
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+## 3 Working with Link (preventDefault())
+
+- "MainHeader.js"
+  => Header With a list of links "href" for our Router Components
+  => { Link } implemented to "preventDefault()"
+
+----------------------------------------------- import { Link } from 'react-router-dom'
+to preventDefault() => <Link to="/welcome">Welcome</Link>
