@@ -35,7 +35,7 @@ To activate { Route } reatures (Needs to be added in top layer) <BrowserRouter><
   => { Link } implemented to "preventDefault()"
 
 ----------------------------------------------- import { Link } from 'react-router-dom'
-to preventDefault() => <Link to="/welcome">Welcome</Link>
+to href & preventDefault() => <Link to="/welcome">Welcome</Link>
 
 ///////////////////////////////////////////////////////////////////////////////////////
 
@@ -73,3 +73,21 @@ Does the same as { Link } but contains "activeClassName={}"
 
 ------------------------------------------------ import { useParams } from 'react-router-dom'
 To extract params "/:"
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+## 6 Using "Switch" and "exact" for Configuring Routes
+
+- "Products.js"
+  => { Link } implemented to the <li> items
+
+- "App.js"
+  => { Switch } implemented (Wrapped around all <Route>) To allow only 1 to be activated
+  => Added "exact" to (only run if exact URL)
+
+------------------------------------------------ import { Switch } from 'react-router-dom'
+To allow only 1 route to be activated (finds/renders first match) (will not consider "/:")
+**\*** FIX **\***
+
+1. <Route path='anyThing' exact> (only run if exact URL)
+2. Change JSX order
