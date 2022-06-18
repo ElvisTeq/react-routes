@@ -100,3 +100,13 @@ We can nest routes { Route } inside another { Route }
 
 - "Welcome.js"
   => Added { Route } nesting "/welcome" + "/new-user"
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+## 8 Redirecting The User
+
+- "App.js"
+  => Implemented { Redirect } + "exact" to redirect default page to "/welcome" if <Route path="/" exact>
+
+---------------------------------------------- import { Redirect } from 'react-router-dom'
+<Route path="/" exact> <Redirect to="/ANYWHERE" /> </Route>
